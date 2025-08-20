@@ -42,3 +42,11 @@ function greetings(){
 morningGreetings();
 eveningGreetings();
 greetings();
+
+function greetingsHello(name, town, age){
+    console.log("Hello "+name);
+    console.log("Welcome to "+town);
+    console.log("your age is "+age);
+}
+
+greetingsHello("Dilujan", "Sri Lanka", 20)
