@@ -37,7 +37,7 @@ function CheckVowelOrConsonant(letter){
         return letter+" is Vowel"
     }
     else{ 
-        return " is Consonant"
+        return "is Consonant"
     }
 }
 console.log(CheckVowelOrConsonant(letter))
