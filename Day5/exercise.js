@@ -49,7 +49,7 @@ for(let j=row; j>=1; j--){
 console.log("Bottom Right Triangle ");
 let left=5;
 for(let j=left; j>=1; j--){
-    let pattern1=" ";
+    let pattern1="  ";
     let  pattern="* ";
 
     console.log(pattern1.repeat((left-j))+pattern.repeat(j));
