@@ -37,3 +37,38 @@ function reverseArray(array){
 }
 console.log("The original array values are "+arrayx);
 console.log("The reversed array values are "+reverseArray(arrayx));
+
+//Write afunction exists(element) that prints true if the element is present, otherwise false.
+function exists(array, num){
+    for(let i=0; i<array.length;i++){
+        if(array[i]==num){
+            return "true";
+        }
+    }
+    return "false";
+}
+console.log(exists(arrayx, 10));
+
+//Write a function checkPalindrome(word) that indicate whether the given word is palindrome or not.
+function checkPalindrome(word){
+    let revWord="";
+    for(let i=word.length-1; i>=0;i--){
+        revWord+=word[i];
+    }
+    if(revWord==word){
+        return "true";
+    }
+    return "false";
+}       
+console.log(checkPalindrome("madam"));
+
+//Write a function sumOfDigi(number) that prints the sum of the given number.
+function sumOfDigi(num){
+    let sum=0;
+    while(num>0){
+        sum+=num%10;
+        num=Math.floor(num/10);
+    }
+    return sum;
+}
+console.log(sumOfDigi(123456));
