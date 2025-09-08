@@ -13,5 +13,3 @@ if(isPalindrome(str))
     console.log("Yes, "+str+" is a Palindrome word");
 else
     console.log("No, "+str+" isn't a Palindorme word");
-
-
