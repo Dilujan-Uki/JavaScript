@@ -22,7 +22,7 @@ console.log("For to come in row without bracket")
 for(let i=0; i<num.length; i++){
     let string=""
     for(let j=0; j<num[0].length;j++){
-        string+= " "+num[i] [j]+", "
+        string+=num[i][j]+", "
     }
     console.log(string);
 }
@@ -35,5 +35,3 @@ const mat = Array.from({length: rows},() => new Array(cols).fill(Math.floor(Math
 for(let k=0; k<num.length; k++){
     console.log(mat[k]);
 }
-
-
