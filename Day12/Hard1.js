@@ -28,12 +28,12 @@ let row=3;
 let col=4;
 let mat1=genrateMatrix(row,col);
 let mat2=genrateMatrix(row,col);
+let sumMat=SumOfMatrix(mat1,mat2)
 
 console.log("Matrix 1 is: ");
-console.log(mat1);
+PrintMatrix(mat1);
 console.log("Matrix 2 is: ");
-console.log(mat2);
+PrintMatrix(mat2);
  
 console.log("Summation of both Matrix is ");
-let sumMat = SumOfMatrix(mat1,mat2);
 PrintMatrix(sumMat);
