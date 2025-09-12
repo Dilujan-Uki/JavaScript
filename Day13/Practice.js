@@ -6,10 +6,13 @@ function main(){
     printMatrix(matrix);
     console.log("\nThe maximum in each row in given matrix are:");
     findMaxInEachRow(matrix);
+    console.log("\nThe total of the each value Array");
+    findTotalOfEachRow(matrix);
     console.log("\nThe average of the each row");
     findAverageInEachRow(matrix);
     console.log("\nThe average of the total Matrix");
     findTotalAverage(matrix);
+
 }
 main();
 //function for random generation and store in 2d matrix
@@ -38,6 +41,16 @@ function findMaxInEachRow(mat){
         console.log("The maximum value in row "+(i+1)+" is "+maxValue);
     }
 }
+function findTotalOfEachRow(mat){
+    for(let i=0; i<mat.length; i++){
+        let maxValue=0;
+        for(let j=0; j<mat[0].length; j++){ 
+                maxValue+=mat[i][j];
+            
+        }
+        console.log("The Total value in row "+(i+1)+" is "+maxValue);
+    }
+}
 function findAverageInEachRow(mat){
     for(let i=0; i<mat.length; i++){
         let maxValue=0;
@@ -48,8 +61,9 @@ function findAverageInEachRow(mat){
         console.log("The Average value in row "+(i+1)+" is "+maxValue/5);
     }
 }
+
 function findTotalAverage(mat){
-    let total=findAverageInEachRow(mat);
+    let total=findAverageInEachRow(mat); 
     for(let i=0; i<findAverageInEachRow; i++){
         let maxValue=0;
         for(let j=0; j<mat[0].length; j++){ 
