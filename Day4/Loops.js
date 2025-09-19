@@ -1,7 +1,7 @@
 //JavaScript Loops - for
 
 for(let i=0; i<5; i++){
-    console.log("Hello Uki DSA");
+    console.log("Hello Uki DSA",i);
 }
 for(let i=1; i<4; i++){
     console.log("Count:",i);
