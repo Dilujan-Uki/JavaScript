@@ -18,7 +18,7 @@ function SumOfNum(num){
    let sumNum=0;
    while(num>0){
       sumNum+=(num%10);
-      num=+Math.floor(num/10);
+      num=Math.floor(num/10);
    }
    return sumNum;
 }
@@ -29,7 +29,7 @@ function SummationUntilOneDigit(num){
    let sum=0;
    while(num>0){
       sum+=(num%10);
-      num=+Math.floor(num/10);
+      num=Math.floor(num/10);
    }
    if(sum<10)
       return sum;
