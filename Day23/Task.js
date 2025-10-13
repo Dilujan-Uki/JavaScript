@@ -10,7 +10,8 @@ function main(){
     let level=["Level1","Level2","Level3","Level4"];
     let Course=["ICT","BIO","Maths"]
     totalNumberOfstudents(numbers,Course);
-    totalNumberOfstudentsBYBatch(numbers,level)
+    totalNumberOfstudentsBYBatch(numbers,level);
+     console.log(totalNumberOfstudens(numbers));
 }
 main();
 function totalNumberOfstudents(numbers,Course){
@@ -32,5 +33,15 @@ function totalNumberOfstudentsBYBatch(numbers,level){
         }
         console.log("The total of the "+level[i]+" is "+total1);
     }
+}
+
+function totalNumberOfstudens(numbers){
+    let total1=0;
+    for(let i=0;i<numbers.length;i++){
+        for(let j=0;j<numbers[0].length;j++){
+            total1+=numbers[i][j]
+        }
+    }
+    return "The total population of the studen is "+total1
 }
 
