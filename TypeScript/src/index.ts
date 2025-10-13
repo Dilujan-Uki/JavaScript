@@ -7,9 +7,8 @@ function main(){
     const student1 = new Student("Dilujan",20,"Batticalo");
      console.log(student1.getStudentName());
     const student2 = new Student("Mukilan",20,"Batticalo");
-
+     console.log(student2.getStudentName());
     console.log("\n");
-    console.log(student2.getStudentName());
     const radius1 = new Circle(7);
     const radius2 = new Circle(8);
     const radius3 = new Circle(9);
@@ -18,8 +17,8 @@ function main(){
     console.log("The Area of Circle3 is "+Math.floor(radius3.getArea()));
 
     console.log("\n")
-    console.log("The Perimiter of Circle1 is "+Math.floor(radius1.getArea()));
-    console.log("The Perimiter of Circle2 is "+Math.floor(radius2.getArea()));
-    console.log("The Perimiter of Circle3 is "+Math.floor(radius3.getArea()));
+    console.log("The Perimiter of Circle1 is "+Math.floor(radius1.getPerimiter()));
+    console.log("The Perimiter of Circle2 is "+Math.floor(radius2.getPerimiter()));
+    console.log("The Perimiter of Circle3 is "+Math.floor(radius3.getPerimiter()));
 }
 main();
