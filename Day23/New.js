@@ -1,4 +1,4 @@
-let num=1234;
+let num=12345;
 function squareDigit(num){
     let num1=0;
     while(num>0){
@@ -25,7 +25,7 @@ function isPrime(num) {
 }
 
 // Example usage
-const number = 1;
+const number = 7;
 if (isPrime(number)) {
   console.log(`${number} is a Prime number`);
 } else {
